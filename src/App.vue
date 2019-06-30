@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img(src='./assets/logo.png')
+    img(src='https://gelito-x.github.io/music/assets/logo.png')
     h1 Music
     select(v-model="selectCountry") 
       option(v-for="country in countries" v-bind:value="country.value") {{ country.name}} 
