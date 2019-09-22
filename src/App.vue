@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    img(src='https://gelito-x.github.io/music/dist/logo.png')
+    img(src='https://angel-jadan.github.io/music/dist/logo.png')
       
     h1 Music
     select(v-model="selectCountry") 
