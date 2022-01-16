@@ -13,6 +13,6 @@
 
 <style lang="stylus" scoped> 
 li.artist
-	display block
+	display flex
 	margin 10px 0
 </style>
