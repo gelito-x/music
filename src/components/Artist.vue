@@ -12,7 +12,18 @@
 </script>
 
 <style lang="stylus" scoped> 
-li.artist
+li
+	margin 5px
+
+
+li.artist 
 	display flex
-	margin 10px 0
+	flex-direction column
+	align-content center
+	align-items center
+	justify-content space-around
+
+img
+	width 200px
+	height: 200px	
 </style>

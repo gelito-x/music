@@ -4,10 +4,13 @@
       
     h1 Music
     select(v-model="selectCountry") 
-      option(v-for="country in countries" v-bind:value="country.value") {{ country.name}} 
+      option(v-for="country in countries" 
+      v-bind:value="country.value") {{ country.name}} 
     spinner(v-show="loading")
     ul
-      artist(v-for="artist in artists" v-bind:artist="artist" v-bind:key="artist.mbid")
+      artist(v-for="artist in artists" 
+      v-bind:artist="artist" 
+      v-bind:key="artist.mbid")
 </template>
 
 <script>
@@ -62,6 +65,7 @@ export default {
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+  text-align center
   color #2c3e50
   margin-top 60px
 
@@ -70,9 +74,10 @@ h1, h2
 
 ul
   display flex
+  flex-direction row
+  flex-flow row wrap
   justify-content space-around
-  padding 0
-  
+  justify-items center
 a
   color #42b983
 </style>
